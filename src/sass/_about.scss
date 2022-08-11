@@ -1,1 +1,82 @@
-//about styles
+.about-section {
+  //   background-image: url(../images/bcg-about-desktop@1x.png);
+  background-size: contain;
+  background-origin: padding-box;
+  background-position: center bottom 70px;
+  background-repeat: no-repeat;
+  background-color: #fff5f6;
+}
+
+.about-container {
+  padding: 60px 20px 40px;
+}
+
+.about-section__lable {
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 16px;
+}
+
+.about-section__title {
+  margin: 0;
+  font-size: 58px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 150px;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-picture {
+  margin-right: 99px;
+  margin-top: -90px;
+}
+
+.about-text {
+  margin: 0;
+}
+
+.about-text__pre-info {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.about-text__info {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.92;
+  letter-spacing: 0.04em;
+  color: #907e82;
+  margin-bottom: 40px;
+}
+
+.about-button {
+  width: 176px;
+  height: 44px;
+  left: 616px;
+  top: 2349px;
+  background: #ffffff;
+  border: transparent;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+}
