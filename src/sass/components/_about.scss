@@ -16,12 +16,20 @@
 }
 
 .about-section {
-  background-image: url(../images/about/bcg-about-desktop@1x.png);
   background-size: contain;
   background-origin: padding-box;
   background-position: center bottom 70px;
   background-repeat: no-repeat;
   background-color: var(--bgc-primary);
+
+  @media screen and (max-width: 767px) {
+    background-position: center bottom 210px;
+    background-image: url(../images/about/bcg-about-mobile@1x.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/about/bcg-about-desktop@1x.png);
+  }
 }
 
 .about-container {
@@ -160,7 +168,7 @@
   height: 44px;
   left: 20px;
   top: 3432px;
-  background: var(--colorText-secondary);
+  background-color: var(--colorText-secondary);
   border: transparent;
   border-radius: 22px;
   font-family: var(--fontFamaly-secondary);
@@ -168,6 +176,9 @@
   font-size: 14px;
   line-height: 1.28;
   color: var(--colorText-primary);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     left: 400px;
@@ -180,15 +191,20 @@
     left: 616px;
     top: 2349px;
   }
-}
 
-.about-button:after {
-  content: '>';
-  width: 6px;
-  height: 8px;
-  vertical-align: middle;
-  margin-left: 10px;
-  font-size: 16px;
-  border: 2px;
-  text-transform: uppercase;
+  &::after {
+    content: '>';
+    width: 6px;
+    height: 8px;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 16px;
+    border: 2px;
+    text-transform: uppercase;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--bgc-btnHover);
+  }
 }
