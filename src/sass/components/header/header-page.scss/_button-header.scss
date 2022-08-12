@@ -1,0 +1,10 @@
+/* Oсобисті дані */
+.button-header {
+    display: none;
+ 
+    @include media-min (768px) {
+        display: block;
+        cursor: pointer;
+    } 
+}
+

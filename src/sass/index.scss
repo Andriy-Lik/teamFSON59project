@@ -3,7 +3,18 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixin';
-@import './components/header-nav';
+
+@import './components/header/logo';
+@import './components/header/header-page.scss/header-page';
+@import './components/header/header-page.scss/button-menu';
+@import './components/header/header-page.scss/navigation';
+@import './components/header/header-page.scss/button-header';
+@import './components/header/mobile-menu/backdrop.is-hidden';
+@import './components/header/mobile-menu/backdrop';
+@import './components/header/mobile-menu/mobile-menu';
+@import './components/header/mobile-menu/button-mobile';
+@import './components/header/mobile-menu/navigation-mobile';
+
 @import './components/header-hero';
 @import './components/products';
 @import './components/about';

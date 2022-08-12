@@ -1,0 +1,25 @@
+/* Хедер */
+.header-nav {
+    background-color: var(--bgc-secondary);
+    &__thumb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media-min-max (768px, 1200px) {
+            flex-grow: 1;
+        }
+    }
+    &__outer-margin {
+        @include media-max (1200px) {
+            padding: 8px 0 8px 0;
+        }
+        @include media-min (1200px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }  
+}
+
+.menu-thumb { 
+    display: flex;
+}
