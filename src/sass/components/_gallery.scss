@@ -1,1 +1,45 @@
-//gallery styles
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+.gallery-container {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    // outline: 1px solid teal;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+// .gallery__item {
+
+
+// }
+
+// .gallery__thumb {
+
+// }
+
+// .gallery__thumb--big {
+
+// }
+
+// .gallery__img {
+
+// }
