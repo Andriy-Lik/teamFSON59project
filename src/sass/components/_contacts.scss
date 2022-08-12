@@ -1,1 +1,84 @@
-//contacts styles
+//contacts styles// common styles
+.contacts-section {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;    
+    
+    color: var(--colorText-other);
+    background-color: pink;
+}
+
+.contacts-card {
+
+    padding: 40px 32px;
+    border-radius: 24px;
+    background-color: var(--colorText-secondary);
+    
+    &:not(:last-of-type) {
+       margin-bottom: 20px;  
+    }
+
+    &:last-of-type {
+        margin-bottom: 32px;  
+     }
+
+     &__category {
+        // display: inline-block;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: 0.64px;
+        color: var(--colorText-secondary);
+        background-color: var(--bgc-other);
+        height: 16px;
+        width: 80px;
+        // padding: 0 25px;
+        border-radius: 4px;
+
+        margin-bottom: 20px;
+
+        &--green {
+            background-color: var(--bgc-accent);
+        }
+    }
+     
+     &__caption {
+        margin-bottom: 24px;
+        }
+   
+
+    &__city {
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: 0,04em;
+        margin-bottom: 8px;
+    }
+
+    &__description {
+        line-height: 1,5;
+        color: var(--colorText-accent);
+    }
+
+    &__schedule {
+        padding: 24px 0;
+        border-top: 2px solid var(--border-decorative);
+        border-bottom: 2px solid var(--border-decorative);
+        margin-bottom: 24px;
+
+    }
+
+    &__work-hours:not(:last-of-type) {
+        margin-bottom: 8px;
+    }
+
+    &__time {
+        color: var(--colorText-third);
+    }
+
+    &__link {
+        line-height: 1,5;
+        color: var(--colorText-accent);
+    }
+}
