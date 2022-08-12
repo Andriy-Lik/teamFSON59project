@@ -1,8 +1,6 @@
 //header-hero styles
 
-ul, li{
-    list-style: none;
-}
+
 
 .hero-header{
     width: 100%;
@@ -14,21 +12,7 @@ ul, li{
     position: relative;
     height: 664px;
 }
-.container{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 16px;
-    outline: 1px solid blue;
 
-    @media screen and (min-width:768px){
-        padding: 0 32;
-    }
-    @media screen and (min-width:1200px){
-        padding: 0 16px;
-    }
-
-}
 
 
 // делаем заголовок, ссылки и цифры
