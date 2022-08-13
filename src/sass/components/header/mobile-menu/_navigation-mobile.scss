@@ -23,11 +23,13 @@
         line-height: 1.28;
         text-align: center;
         color: var(--colorText-secondary);
-        transition: color var(--default-transition);
+        transition: color var(--default-transition),
+        font-size var(--default-transition);
         /* Навігація ховер, фокус */
             &:hover,
             &:focus {
                 color: var(--colorText-primary);
+                font-size: 16px;
             }
     }
 }
