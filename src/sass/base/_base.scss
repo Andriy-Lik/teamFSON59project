@@ -17,7 +17,12 @@
 }
 
 .button {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 44px;
   border: none;
   border-radius: 22px;
   padding: 0;
@@ -26,124 +31,17 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  text-align: center;
   cursor: pointer;
-  height: 44px;
+  transition: background-color var(--default-transition),
+  color var(--default-transition),
+  transform var(--default-transition);
+}
 
-  &_hero-products {
-    width: 107px;
-    height: 40px;
-    border-radius: 20px;
-
-    font-size: 14px;
-    line-height: 1.29;
-
-    color: var(--colorText-secondary);
-    background-color: var(--colorText-primary);
-  }
-  &_hero-about {
-    width: 138px;
-    height: 40px;
-    border-radius: 20px;
-
-    font-size: 14px;
-    line-height: 1.29;
-
-    color: var(--colorText-primary);
-    background-color: var(--colorText-secondary);
-
-    &:hover {
-      background-color: var(--bgc-btnHover);
-    }
-  }
-  &_header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 159px;
-
-    color: var(--colorText-primary);
-    background-color: var(--colorText-secondary);
-
-    &::after {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 10px;
-      margin-left: 12px;
-
-      background-image: url(../images/icons/Vector1.svg);
-    }
-
-    &:hover {
-      background-color: var(--bgc-btnHover);
-    }
-  }
-  &_about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 176px;
-
-    color: var(--colorText-primary);
-    background-color: var(--colorText-secondary);
-
-    &::after {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 10px;
-      margin-left: 14px;
-
-      background-image: url(../images/icons/Vector1.svg);
-    }
-
-    &:hover {
-      background-color: var(--bgc-btnHover);
-    }
-  }
-  &_contacts-locations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 198px;
-
-    color: var(--colorText-secondary);
-    background-color: var(--colorText-primary);
-
-    &::after {
-      content: '';
-      display: block;
-      width: 8px;
-      height: 10px;
-      margin-left: 13px;
-
-      background-image: url(../images/icons/Vectorwhite.svg);
-    }
-  }
-
-  &_contacts-franchise {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 168px;
-
-    color: var(--colorText-primary);
-    background-color: var(--colorText-secondary);
-
-    &::after {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 10px;
-      margin-left: 14px;
-
-      background-image: url(../images/icons/Vector1.svg);
-    }
-
-    &:hover {
-      background-color: var(--bgc-btnHover);
-      width: 180px;
-    }
-  }
+.button-arrow::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
+  background-image: url(../images/icons/Vector1.svg); 
 }
