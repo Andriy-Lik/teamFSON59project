@@ -12,8 +12,9 @@ display: block;
 padding-bottom: 32px;
 }
 &__title {
-display: block;   
-font-family: var(--fontFamaly-primery); 
+display: block; 
+padding-bottom: 24px;  
+font-family: var(--fontFamaly-primary); 
 font-size: 36px;
 font-weight: 400;
 color: var(--colorText-primary);
