@@ -1,14 +1,24 @@
 //contacts styles// common styles
 
 .contacts-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
     font-family: 'DM Sans';
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;    
     
     color: var(--colorText-other);
-    // background-color: pink;
     background-image: linear-gradient(to bottom, var(--colorText-secondary) 22%, var(--bgc-primary) 22%);
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+       
+        &:not(:last-of-type) {
+            margin-bottom: 10px;  
+         }
+    }
 }
 
 .contacts-list {
@@ -26,24 +36,24 @@
        margin-bottom: 20px;  
     }
 
-     &__category {
-        display: inline-block;
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 0.64px;
-        line-height: 1.5;
-        color: var(--colorText-secondary);
-        background-color: var(--bgc-other);
-        height: 16px;
+        &__category {
+           display: inline-block;
+           text-transform: uppercase;
+           text-align: center;
+           letter-spacing: 0.64px;
+           line-height: 1.4;
+           color: var(--colorText-secondary);
+           background-color: var(--bgc-other);
+           height: 16px;
 
-        padding: 0 25px;
-        border-radius: 4px;
+           padding: 0 25px;
+           border-radius: 4px;
 
-        margin-bottom: 20px;
+           margin-bottom: 20px;
 
-           &--green-wide {
-               background-color: var(--bgc-accent);
-               padding: 0 28px;
+              &--green-wide {
+                  background-color: var(--bgc-accent);
+                  padding: 0 28px;
            }
 
     }
