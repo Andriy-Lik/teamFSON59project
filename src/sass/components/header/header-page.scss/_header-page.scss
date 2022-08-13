@@ -1,6 +1,8 @@
 /* Хедер */
 .header-nav {
     background-color: var(--bgc-secondary);
+
+
     &__thumb {
         display: flex;
         align-items: center;
@@ -19,6 +21,7 @@
         }
     }  
 }
+
 
 .menu-thumb { 
     display: flex;
