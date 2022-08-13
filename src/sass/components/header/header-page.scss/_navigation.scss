@@ -5,6 +5,7 @@
     &__list {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-right: 140px;
     } 
     &__item:not(:last-child) {
@@ -31,6 +32,8 @@
     }
 
     @include media-min (1200px) {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
