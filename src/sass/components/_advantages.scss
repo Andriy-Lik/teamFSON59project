@@ -11,6 +11,21 @@ display: flex;
 display: block;
 padding-bottom: 32px;
 }
+&__title {
+display: block;   
+font-family: var(--fontFamaly-primery); 
+font-size: 36px;
+font-weight: 400;
+color: var(--colorText-primary);
+line-height: 1.15;
+letter-spacing: 0.04em;
+@include media-min-max ($min-width: 767px, $max-width: 1199px) {
+    font-size: 48px;
+}
+@include media-min ($min-width: 1200px) {
+    font-size: 58px;
+}
+}
 &__text {
 font-family: var(--fontFamaly-secondary);
 font-weight: 700;
