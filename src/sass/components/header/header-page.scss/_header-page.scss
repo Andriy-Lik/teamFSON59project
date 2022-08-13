@@ -1,6 +1,11 @@
 /* Хедер */
 .header-nav {
-    background-color: var(--bgc-secondary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: transparent;
     &__thumb {
         display: flex;
         align-items: center;
