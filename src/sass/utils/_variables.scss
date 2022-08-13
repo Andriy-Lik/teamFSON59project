@@ -1,15 +1,19 @@
 :root {
-    --colorText-primary: rgba(212, 20, 67, 1);
-    --colorText-secondary: rgba(255, 255, 255, 1);
-    --colorText-third: rgba(255, 165, 186, 1);
-    --colorText-other: rgba(0, 0, 0, 1);
-    --colorText-accent: rgba(144, 126, 130, 1);
-    --colorText-reviews: rgba(144, 126, 130, 1);
-    --color-icon: rgba(254, 165, 187, 1);
-    --bgc-primary: rgba(255, 245, 246, 1);
-    --bgc-secondary: rgba(255, 184, 202, 1);
-    --bgc-modal: rgba(225, 121, 146, 1);
-    --bgc-btnHover: rgba(236, 235, 235, 1);
-    --fontFamaly-primary: Titan One, cursive;
-    --fontFamaly-secondary: DM Sans, sans-serif;
-  }
+  --colorText-primary: #d41443;
+  --colorText-secondary: #ffffff;
+  --colorText-third: #ffa5ba;
+  --colorText-other: #000000;
+  --colorText-accent: #907e82;
+  --color-icon:  #FEA5BB;
+  --bgc-primary: #FFF5F6;
+  --bgc-secondary: #ffb8ca;
+  --bgc-modal: #E17992;
+  --bgc-btnHover: #ECEBEB;
+  --bgc-other: #F0D1A5;
+  --bgc-accent: #C2E297;
+
+  --fontFamaly-primary: 'Titan One', cursive;
+  --fontFamaly-secondary: 'DM Sans', sans-serif;
+
+  --default-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
