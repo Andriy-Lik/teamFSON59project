@@ -1,6 +1,6 @@
 /* backdrop */
 .backdrop-mobile.is-hidden {
-    transform: scale(1.2);
+    transform: translatey(-100%);
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
