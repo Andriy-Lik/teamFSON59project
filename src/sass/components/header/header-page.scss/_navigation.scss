@@ -22,12 +22,14 @@
         align-items: center;
         padding: 8px 0; 
         color: var(--colorText-secondary);
-        transition: color var(--default-transition);
+        transition: color var(--default-transition),
+        font-size var(--default-transition);
 
         /* Навігація ховер, фокус */
             &:hover,
             &:focus {
                 color: var(--colorText-primary);
+                font-size: 18px;
             }
     }
 
