@@ -8,8 +8,8 @@
     color: var(--colorText-primary);
     background-color: var(--colorText-secondary);
     transform: scale(1);
-    transition: background-color var(--default-transition),
-    transform var(--default-transition);
+    // transition: background-color var(--default-transition),
+    // transform var(--default-transition);
     &:hover,
     &:focus {
         background-color: var(--bgc-btnHover);
