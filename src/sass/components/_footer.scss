@@ -1,1 +1,71 @@
 //footer styles
+
+.footer {
+    background-color: var(--bgc-primary);
+}
+
+.footer-text {
+    font-family: var(--fontFamaly-primary);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.167;
+    text-transform: uppercase;
+
+    color: var(--colorText-third);
+}
+
+.footer-title {
+    font-family: var(--fontFamaly-primary);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--colorText-primary);
+}
+
+.footer-item {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: var(--colorText-secondary);
+    background-color: var(--color-icon);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon {
+    fill: inherit;
+}
+
+.footer-tel {
+    font-family: var(--fontFamaly-secondary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+    text-align: right;
+
+    color: var(--colorText-other);
+}
+
+.footer-tel__text {
+    color: var(--colorText-primary);
+}
+
+.footer-subtitle {
+    font-family: var(--fontFamaly-secondary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+
+    color: var(--colorText-accent);
+}
