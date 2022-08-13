@@ -15,9 +15,17 @@
         background-color: var(--bgc-btnHover);
         transform: scale(1.1);
     }
+    &::after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 10px;
+        margin-left: 12px;
+        background-image: url(../images/icons/Vector1.svg);
+      }
  
     @include media-min (768px) {
-        display: block;
+        display: flex;
         cursor: pointer;
     } 
 }
