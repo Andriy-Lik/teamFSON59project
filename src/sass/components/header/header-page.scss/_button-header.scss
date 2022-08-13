@@ -1,6 +1,8 @@
 /* Oсобисті дані */
 .button-header {
     display: none;
+    border: none;
+    border-radius: 22px;
  
     @include media-min (768px) {
         display: block;
