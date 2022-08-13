@@ -3,6 +3,18 @@
     display: none;
     border: none;
     border-radius: 22px;
+    width: 160px;
+    height: 44px;
+    color: var(--colorText-primary);
+    background-color: var(--colorText-secondary);
+    transform: scale(1);
+    transition: background-color var(--default-transition),
+    transform var(--default-transition);
+    &:hover,
+    &:focus {
+        background-color: var(--bgc-btnHover);
+        transform: scale(1.1);
+    }
  
     @include media-min (768px) {
         display: block;
