@@ -1,13 +1,24 @@
 <section class="about-section">
-    <div class="about-container">
+    <div class="about-container container">
         <p class="about-section__lable">tradition and love</p>
         <h2 class="about-section__title">how it’s made?</h2>
 
         <div class="about-content">
             <picture class="about-picture">
-                <img src="images/about/about-cow-desktop@1x.png" alt="cow and milk">
+                <source srcset="images/about/about-cow-mobile@1x.webp 1x, images/about/about-cow-mobile@2x.webp 2x"
+                    type="image/webp" media="(max-width: 767px)" />
+                <source srcset="images/about/about-cow-mobile@1x.png 1x, images/about/about-cow-mobile@2x.png 2x"
+                    type="image/png" media="(max-width: 767px)" />
+                <source srcset="images/about/about-cow-tablet@1x.webp 1x, images/about/about-cow-tablet@2x.webp 2x"
+                    type="image/webp" media="(max-width: 1199px)" />
+                <source srcset="images/about/about-cow-tablet@1x.png 1x, images/about/about-cow-tablet@2x.png 2x"
+                    type="image/png" media="(max-width: 1199px)" />
+                <source srcset="images/about/about-cow-desktop@1x.webp 1x, images/about/about-cow-desktop@2x.webp 2x"
+                    type="image/webp" media="(min-width: 1200px)" />
+                <source srcset="images/about/about-cow-desktop@1x.png 1x, images/about/about-cow-desktop@2x.png 2x"
+                    type="image/png" media="(min-width: 1200px)" />
+                <img src="images/about/about-cow-mobile@1x.png" alt="cow and milk" alt="cow and milk">
             </picture>
-
 
             <div class="about-text">
                 <p class="about-text__pre-info">
@@ -29,6 +40,5 @@
                 <button type="button" class="about-button">Read more</button>
             </div>
         </div>
-
     </div>
 </section>
