@@ -181,6 +181,7 @@
     }
 
     &__description {
+        max-width: 180px;
         line-height: 1.5;
         color: var(--colorText-accent);
 
@@ -189,6 +190,7 @@
         }
 
         @media screen and (min-width:1200px) {
+            max-width: 250px;
             line-height: 1.83;
             letter-spacing: 0.04em;
         }
