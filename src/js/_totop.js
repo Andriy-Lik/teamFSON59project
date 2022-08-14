@@ -1,3 +1,5 @@
+console.log('Hello, World!');
+
 const offset = 100;
 const scrollUp = document.querySelector('.totop');
 const scrollUpSvgPath = document.querySelector('.totop__svg-path');
@@ -34,10 +36,3 @@ scrollUp.addEventListener('click', () => {
         behavior: 'smooth'
     });
 }); 
-
-// scrollUp.addEventListener('click', () =>  {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: 'smooth'
-//     });
-// })
