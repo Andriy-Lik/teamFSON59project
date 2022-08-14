@@ -12,7 +12,13 @@
     }
     
     color: var(--colorText-other);
-    background-image: linear-gradient(to bottom, var(--colorText-secondary) 22%, var(--bgc-primary) 22%);
+    background-image: 
+    linear-gradient(to bottom, var(--colorText-secondary) 22%, var(--bgc-primary) 22%);
+
+    @media screen and (min-width:768px) {
+        background-image: 
+    linear-gradient(to bottom, var(--colorText-secondary) 45%, var(--bgc-primary) 45%);
+    }
 
     &__button {
         margin: 0 auto;
