@@ -169,7 +169,8 @@
   font-size: 14px;
   line-height: 1.28;
   color: var(--colorText-primary);
-  transition-property: background-color;
+  transform: scale(1);
+  transition-property: background-color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -181,6 +182,7 @@
   &:hover,
   &:focus {
     background-color: var(--bgc-btnHover);
+    transform: scale(1.1);
   }
 }
 
