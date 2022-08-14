@@ -14,20 +14,27 @@
         width: 161px;
         color: var(--colorText-secondary);
         background-color: var(--colorText-primary);
+        transform: scale(1);
+        transition: background-color var(--default-transition),
+        transform var(--default-transition);
 
         &:hover,
         &:focus {
             background-color: var(--bgc-btnHoverAccent);
+            transform: scale(1.1);
         }
 
         &--light {
             color: var(--colorText-primary);
             background-color: var(--colorText-secondary);
-            transition: background-color var(--default-transition);
+            transform: scale(1);
+            transition: background-color var(--default-transition),
+            transform var(--default-transition);
 
             &:hover,
             &:focus {
                 background-color: var(--bgc-btnHover);
+                transform: scale(1.1);
             }
         }
         
