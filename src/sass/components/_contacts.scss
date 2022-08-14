@@ -47,17 +47,39 @@
 
 .contacts-list {
     margin-bottom: 32px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-bottom: 60px;
+    }
 }
 
 .contacts-card {
-
     padding: 40px 32px;
     border-radius: 24px;
     background-color: var(--colorText-secondary);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 2 * 32px) / 3);
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 40px;
+    }
+
+    
     
     &:not(:last-of-type) {
-       margin-bottom: 20px;  
+
+    @media screen and (max-width:767.5px) {
+       margin-bottom: 20px; 
+    }
+    @media screen and (min-width:768px) {
+        margin-right: 32px;
+    }
+
+    
     }
 
         &__category {
