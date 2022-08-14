@@ -70,8 +70,8 @@
     background-image: repeating-linear-gradient(to bottom,
         transparent,
         transparent 29px,
-        #E1E1E1 1px,
-        #E1E1E1 30px);
+        var(--border-decorative) 1px,
+        var(--border-decorative) 30px);
 
         @include media-min (768px) {
             font-size: 14px;
@@ -125,7 +125,6 @@
     position: absolute;
 
     top: 50px;
-    // transform: translateY(100%);
     left: 50px;
     width: 54px;
     height: 40px;
@@ -174,7 +173,7 @@ margin-right: 10px;
 
 .slick-dots li.slick-active button {
     background-image: url(../images/icons/house.svg);
-    fill: #D31342;
+    // fill: #D31342;
     border-radius: 0%;
     background-color: transparent;
 }
