@@ -6,10 +6,12 @@
     z-index: 1000;
     width: 50px;
     height: 50px;
-    color: aqua;
+
+    color: var(--color-icon);
     cursor: pointer;
     border-radius: 50px;
-    box-shadow: inset 0 0 0 4px aqua;
+    box-shadow: inset 0 0 0 4px var(--color-icon);
+
     opacity: 0;
     transition: .2s;
     transform: translateY(25px);
@@ -30,6 +32,14 @@
 
 
 .totop::before {
+
+    letter-spacing: .06em;
+        text-transform: uppercase;
+        font-size: 34px;
+        line-height: 1.15;
+        font-family: var(--fontFamaly-primary);
+        color: var(--colorText-primary);
+
     position: absolute;
     top: 0;
     left: 0;
@@ -45,13 +55,17 @@
 }
 
 .totop::after {
+
+    color: var(--colorText-primary);
+
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+
+    width: 95%;
     height: 90%;
     font-size: 35px;
     content: '➤';
@@ -80,7 +94,8 @@
 .totop__svg-path {
     box-sizing: border-box;
     fill: none;
-    stroke: orange;
+
+    stroke: var(--colorText-primary);
     stroke-width: 4px;
     transition: .2s;
 }
