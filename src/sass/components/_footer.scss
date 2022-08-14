@@ -1,16 +1,22 @@
 //footer styles
 
+.footer {
+    background-color: var(--bgc-primary);
+}
+
 .footer-section {
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     padding-bottom: 40px;
 
-    @media (min-width: 1199px) {
+    @media (min-width: 1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-}
-
-.footer {
-    background-color: var(--bgc-primary);
 }
 
 .footer-title {
@@ -84,8 +90,16 @@
 }
 
 .footer-contacts {
-    display: flex;
-    flex-direction: column;
+
+    @media (min-width: 768px) {
+        padding-top: 52px;
+    }
+    
+    @media (min-width: 1200px) {
+        padding-top: 12px;
+    }
+    //display: flex;
+    //flex-direction: column;
 }
 
 .footer-list {
