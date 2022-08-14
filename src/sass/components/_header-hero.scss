@@ -28,10 +28,9 @@
 .hero-header__cont{
     position: relative;
     height: 502px;
-
     @media screen and (min-width: 768px) {
         height: 416px;
-        
+        overflow: hidden;
 }
 
     @media screen and (min-width: 1200px) {
