@@ -309,6 +309,9 @@
 }
 
 .products__btn {
+  transition: scale var(--default-transition),
+    box-shadow var(--default-transition);
+
   &-pinkHover:hover,
   &-pinkHover:focus {
     scale: 1.1;
