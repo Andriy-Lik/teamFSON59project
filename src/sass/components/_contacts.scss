@@ -4,19 +4,34 @@
     font-family: var(--fontFamaly-secondary);
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.86;    
+    line-height: 1.86; 
+    
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        padding-top: 30px;
+    }
     
     color: var(--colorText-other);
     background-image: linear-gradient(to bottom, var(--colorText-secondary) 22%, var(--bgc-primary) 22%);
 
     &__button {
         margin: 0 auto;
-        width: 161px;
+        padding: 0 18px;
         color: var(--colorText-secondary);
         background-color: var(--colorText-primary);
         transform: scale(1);
         transition: background-color var(--default-transition),
         transform var(--default-transition);
+
+        @media screen and (min-width:768px) {
+            display: inline-flex;
+            padding: 0 30px;
+            margin: 0;
+
+            &:not(:last-of-type) {
+                margin-right: 14px;  
+             }
+        }
 
         &:hover,
         &:focus {
@@ -43,47 +58,95 @@
             margin-bottom: 10px;  
          }
     }
+    @media screen and (min-width:768px) {
+        &__button-container {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
 }
 
 .contacts-list {
     margin-bottom: 32px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-bottom: 60px;
+    }
 }
 
 .contacts-card {
-
     padding: 40px 32px;
     border-radius: 24px;
     background-color: var(--colorText-secondary);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 2 * 32px) / 3);
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 40px;
+    }
+
+    
     
     &:not(:last-of-type) {
-       margin-bottom: 20px;  
+
+    @media screen and (max-width:767.5px) {
+       margin-bottom: 20px; 
+    }
+    @media screen and (min-width:768px) {
+        margin-right: 32px;
+    }
+
+    
     }
 
         &__category {
            display: inline-block;
            text-transform: uppercase;
            text-align: center;
-           letter-spacing: 0.64px;
+           letter-spacing: 0.04em;
            line-height: 1.4;
-           color: var(--colorText-secondary);
-           background-color: var(--bgc-other);
            height: 16px;
 
+           color: var(--colorText-secondary);
+           background-color: var(--bgc-other);
+           
            padding: 0 25px;
            border-radius: 4px;
 
            margin-bottom: 20px;
 
+           @media screen and (min-width:768px) {
+            font-size: 16px;
+            line-height: 1.86;
+            height: 28px;
+            padding: 0 16px;
+            margin-bottom: 32px;
+        }
+
               &--green-wide {
                   background-color: var(--bgc-accent);
                   padding: 0 28px;
+
+                  @media screen and (min-width:768px) {
+                    height: 28px;
+                    padding: 0 16px;
+                }
            }
 
     }
      
      &__caption {
         margin-bottom: 24px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 32px;
+        }
         }
    
 
@@ -91,24 +154,41 @@
         font-size: inherit;
         font-weight: inherit;
         line-height: inherit;
-        letter-spacing: 0,04em;
+        letter-spacing: 0.04em;
         margin-bottom: 8px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 12px;
+        }
     }
 
     &__description {
-        line-height: 1,5;
+        line-height: 1.5;
         color: var(--colorText-accent);
+
+        @media screen and (min-width:768px) {
+            line-height: 1.66;
+        }
     }
 
     &__schedule {
         padding: 24px 0;
-        border-top: 2px solid var(--border-decorative);
-        border-bottom: 2px solid var(--border-decorative);
+        border-top: 1px solid var(--border-decorative);
+        border-bottom: 1px solid var(--border-decorative);
         margin-bottom: 24px;
+
+        @media screen and (min-width:768px) {
+            padding: 32px 0;
+            margin-bottom: 32px;
+        }
     }
 
     &__work-hours:not(:last-of-type) {
         margin-bottom: 8px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 12px;
+        }
     }
 
     &__time {
@@ -116,9 +196,13 @@
     }
 
     &__link {
-        line-height: 1,5;
+        line-height: 1.5;
         color: var(--colorText-accent);
         transition: color var(--default-transition);
+
+        @media screen and (min-width:768px) {
+            line-height: 1.83;
+        }
 
          &:hover,
          &:focus {
