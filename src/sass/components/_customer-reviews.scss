@@ -154,7 +154,7 @@
 }
 
 .slick-dots li:not(:last-child) {
-margin-right: 10px;
+margin-right: 18px;
 }
 
 /* Активная точка */
@@ -169,6 +169,13 @@ margin-right: 10px;
     border-radius: 50%;
     outline-style: none;
     border: none;
+    transition-property: transform;
+    transition: var(--default-transition);
+
+}
+
+.slick-dots li button:hover {
+    transform: scale(1.2);
 }
 
 .slick-dots li.slick-active button {
