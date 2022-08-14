@@ -13,6 +13,7 @@
     }
 
     &__link {  
+        display: block;
         position: relative;
         font-family: var(--fontFamaly-secondary);
         font-style: normal;
@@ -22,14 +23,17 @@
         align-items: center;
         padding: 8px 0; 
         color: var(--colorText-secondary);
+        transform: scale(1);
         transition: color var(--default-transition),
-        font-size var(--default-transition);
+        transform var(--default-transition);
+        // font-size var(--default-transition);
 
         /* Навігація ховер, фокус */
             &:hover,
             &:focus {
                 color: var(--colorText-primary);
-                font-size: 18px;
+                transform: scale(1.1);
+                // font-size: 18px;
             }
     }
 
