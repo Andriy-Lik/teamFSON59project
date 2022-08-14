@@ -84,8 +84,8 @@
 
     @media (min-width: 1200px) {
         font-size: 58px;
-        line-height: 1.138;
-        letter-spacing: 0.06em;
+        line-height: 1.145;
+        letter-spacing: 0.05em;
     }
 }
 
@@ -99,7 +99,6 @@
         padding-top: 12px;
     }
     //display: flex;
-    //flex-direction: column;
 }
 
 .footer-list {
@@ -149,6 +148,10 @@
     font-size: 12px;
     line-height: 1.83;
     text-align: right;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 
     @media (min-width: 768px) {
         font-size: 14px;
