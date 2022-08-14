@@ -146,6 +146,10 @@
         line-height: 1.86;
         letter-spacing: 0.02em;
     }
+}
+
+.footer-tel__text {
+    color: var(--colorText-primary);
 
     transform: scale(1);
     transition: transform var(--default-transition);
@@ -154,11 +158,6 @@
     &:focus {
         transform: scale(1.1);
     }
-    
-}
-
-.footer-tel__text {
-    color: var(--colorText-primary);
 }
 
 .footer-subtitle {
