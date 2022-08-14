@@ -19,28 +19,24 @@
 
 .hero-header{
     width: 100%;
-    // height: 664px;
     background-color: #FFB8CA;
     z-index: -1;
-    position: relative;
+    
     overflow: hidden;
 }
 .hero-header__cont{
     position: relative;
-    height: 664px;
     height: 502px;
     
 
     @media screen and (min-width: 768px) {
-        .hero-header__cont {
         height: 416px;
-        }
+        
 }
 
     @media screen and (min-width: 1200px) {
-        .hero-header__cont {
         height: 664px;
-        }
+        
     }
 }
 
@@ -50,7 +46,11 @@
 
 // делаем заголовок, ссылки и цифры
 .hero{
-    padding-top: 150px;
+    padding-top: 102px;
+
+    @media screen and (min-width:1200px){
+        padding-top: 150px;
+    }
 }
 .hero__left{
     display: flex;
@@ -150,7 +150,8 @@ border-radius: 20px;
 font-size: 8px;
 line-height: 1.25;
 height: 24px;
-transition: var(--default-transition);
+transition: background-color var(--default-transition), color var(--default-transition), transform var(--default-transition);
+transform: scale(1);
 }
 
 @media screen and (min-width: 1200px) {
@@ -167,6 +168,7 @@ transition: var(--default-transition);
     color: var(--colorText-secondary);
     &:hover, &:focus{
         background-color: #d41444bb;
+        transform: scale(1.1);
     }
 }
 @media screen and (min-width: 1200px) {
@@ -185,6 +187,7 @@ color: var(--colorText-primary);
 
 &:hover, &:focus{
     background-color: var(--bgc-btnHover);
+    transform: scale(1.1);
 }
 }
 
@@ -297,9 +300,6 @@ display: block;
 
 // похиционируем картинку с молоком
 .hero-thumb__milk{
-    // position: absolute;
-    // left: 15px;
-    // bottom: 60px;
     display: none;
     
 }
@@ -309,8 +309,6 @@ display: block;
     position: absolute;
     left: 32px;
     bottom: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     }
 }
@@ -325,8 +323,9 @@ display: block;
 
 .hero-thumb__decription{
     display: flex;
-    align-items: center;
-    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     z-index: 2;
     
 }
@@ -339,7 +338,11 @@ line-height: 1.5;
 width: 114px;
 height: 48px;
 color: var(--colorText-secondary);
+margin-bottom: 7px;
 
+@media screen and (min-width:1200px){
+    margin-bottom: 20px;
+}
 }
 
 
@@ -355,9 +358,6 @@ color: var(--colorText-secondary);
 .hero-thumb__btn{
     width: 18px;
     height: 18px;
-    position: absolute;
-    left: 0;
-    bottom: 31px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -367,11 +367,7 @@ color: var(--colorText-secondary);
     align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
-    .hero-thumb__btn {
-    bottom: 33;
-    }
-}
+
 .hero-thumb__btn {
     width: 18px;
     height: 18px;
@@ -393,7 +389,7 @@ color: var(--colorText-secondary);
     .hero-thumb__girl {
     display: block;
     position: absolute;
-    right: 15px;
+    right: 32px;
     bottom: 0;
     z-index: 2;
     width: 190px;
@@ -404,6 +400,7 @@ color: var(--colorText-secondary);
     .hero-thumb__girl {
     right: 32px;
     width: 304px;
+    right: 16px;
     }
 }
 
