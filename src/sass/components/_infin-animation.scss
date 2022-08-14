@@ -54,10 +54,12 @@
 // модальне вікно
 .question-modal {
     z-index: 21;
-    width: 450px;
+    width: 260px;
     height: auto;
     background-color: var(--bgc-modal);
     padding: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--color-icon);
 
     position: absolute;
     top: 50%;
@@ -67,12 +69,11 @@
 
     @media screen and (min-width: 1200px) {
         min-width: 528px;
-        min-height: 581px;
+        min-height: 400px;
 
     }
-
-    @media screen and (max-width: 479px) {
-        width: 100%;
+    @include media-min (768px) {
+        width: 450px;
     }
 }
 
@@ -140,21 +141,35 @@ width: 20px;
 }
 
 .question-modal .question-modal__title {
- margin-bottom: 12px;
+ margin-bottom: 20px;
+ font-size: 26px;
+ text-align: center;
+    @include media-min (768px)  {
+        font-size: 30px;
+    }
+ 
 }
 
 .question-modal__btn {
-    width: 210px;
-        height: 44px;
-        color: var(--colorText-primary);
-        background-color: var(--colorText-secondary);
-        transition: transform var(--default-transition),
-            background-color var(--default-transition);
-        margin: 0 auto;
-        transform: scale(1);
+    max-width: 176px;
+    width: 100%;
+    height: 44px;
+    color: var(--colorText-primary);
+    background-color: var(--colorText-secondary);
+    transition: transform var(--default-transition),
+    background-color var(--default-transition);
+    margin: 0 auto;
+    transform: scale(1);
+    padding: 0px 15px;
+    cursor: pointer;
 
-        padding: 0px 15px;
-            cursor: pointer;
+        @include media-min (768px)  {
+            max-width: 220px;
+        }
+
+        @include media-min (1200px)  {
+            max-width: 250px;
+        }
 }
 // .visually-hidden {
 //     appearance: none;
