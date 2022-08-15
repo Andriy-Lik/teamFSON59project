@@ -57,10 +57,10 @@
             margin-right: 10px;
         }
 
-                //  &__address-link:hover,
-                //  &__address-link:focus {
-                //      color: rgb(187, 53, 53);
-                //  }
+                 &__address-link:hover,
+                 &__address-link:focus {
+                     color: var(--bgc-btnHoverAccent);
+                 }
 }
 
 
