@@ -1,6 +1,9 @@
 //advantages styles
 .advantages {
 background-color: var(--bgc-primary);
+&__name {
+visibility: hidden;    
+}
 &__list{
 display: block;
 @include media-min ($min-width: 768px) {
@@ -41,13 +44,48 @@ line-height: 1.7;
     line-height: 1.76;
 }
 }
+&__title.icon::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
 }
-.item-icon {
-padding-bottom: 16px;  
-@include media-min-max ($min-width: 768px, $max-width: 1199px) {
-padding-bottom: 36px;    
-}  
-@include media-min ($min-width: 1200px) {
-padding-bottom: 40px;
+&__title.icon::before {
+ margin-bottom: 40px;   
+ background-image: url(../images/advantages/icon1.png);
+ @include for-pixel-ratio-2 {
+    background-image: url(../images/advantages/icon1@2x.png);
+ }
+}
+&__title.apples::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+&__title.apples::before {
+    margin-bottom: 40px;
+    background-image: url(../images/advantages/apples-svgrepo.png);
+    @include for-pixel-ratio-2 {
+        background-image: url(../images/advantages/apples-svgrepo@2x.png);
+    }
+}
+&__title.heart::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+&__title.heart::before {
+    margin-bottom: 40px;
+    background-image: url(../images/advantages/heart.png);
+    @include for-pixel-ratio-2 {
+        background-image: url(../images/advantages/heart@2x.png);
+    }
 }
 }
