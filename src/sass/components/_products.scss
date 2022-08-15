@@ -211,7 +211,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 15px 10px var(--hover-primary);
     transform: rotate(-2deg);
     scale: 1.1;
@@ -267,7 +268,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 15px 10px var(--hover-secondary);
     transform: rotate(-2deg);
     scale: 1.1;
@@ -323,7 +325,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 15px 10px var(--hover-third);
     transform: rotate(-2deg);
     scale: 1.1;
