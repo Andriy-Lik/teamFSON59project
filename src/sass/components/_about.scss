@@ -1,46 +1,29 @@
-.container {
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 320px) {
-    min-width: 320px;
-  }
-
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    min-width: 1200px;
+.about-container {
+  @media screen and (max-width: 767px) {
+    background-size: auto;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: 50% 76%;
+    background-image: url(../images/about/bcg-about-mobile@1x.png);
   }
 }
 
 .about-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-size: contain;
   background-origin: padding-box;
   background-repeat: no-repeat;
   background-color: var(--bgc-primary);
 
-  @media screen and (max-width: 767px) {
-    background-position: 100% 72%;
-    background-image: url(../images/about/bcg-about-mobile@1x.png);
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
   }
 
   @media screen and (min-width: 1200px) {
+    padding: 60px 0;
     background-position: 100% 100%;
     background-image: url(../images/about/bcg-about-desktop@1x.png);
-  }
-}
-
-.about-container {
-  padding: 60px 20px;
-
-  @media screen and (min-width: 768px) {
-    padding: 60px 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 60px 16px;
   }
 }
 
@@ -73,11 +56,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--colorText-primary);
-  margin-bottom: 15px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.14;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -93,18 +77,25 @@
     display: flex;
     justify-content: center;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 }
 
 .about-picture {
   width: 280px;
 
   @media screen and (min-width: 768px) {
-    margin-right: 32px;
-    width: 336px;
+    margin-top: 60px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 99px;
+    margin-top: 0;
     width: 501px;
   }
 }
@@ -112,17 +103,22 @@
 .about-text {
   margin-top: 40px;
   margin-right: 80px;
-  margin-left: 20px;
-  min-width: 220px;
+
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    max-width: 220px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-right: 0;
-    width: 334px;
+    max-width: 334px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 90px;
-    width: 463px;
+    max-width: 463px;
   }
 }
 
@@ -171,54 +167,31 @@
 
 .about-button {
   width: 176px;
-  height: 44px;
-  left: 20px;
-  top: 3432px;
   background-color: var(--colorText-secondary);
-  border: transparent;
-  border-radius: 22px;
-  font-family: var(--fontFamaly-secondary);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
   color: var(--colorText-primary);
-  transition-property: background-color;
+  transform: scale(1);
+  transition-property: background-color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    left: 400px;
-    top: 1785px;
     font-size: 16px;
     line-height: 1.31;
-  }
-
-  @media screen and (min-width: 1200px) {
-    left: 616px;
-    top: 2349px;
-  }
-
-  &::after {
-    content: '>';
-    width: 6px;
-    height: 8px;
-    vertical-align: middle;
-    margin-left: 10px;
-    font-size: 16px;
-    border: 2px;
-    text-transform: uppercase;
   }
 
   &:hover,
   &:focus {
     background-color: var(--bgc-btnHover);
+    transform: scale(1.1);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
-  .about-section {
+  .about-container {
     background-image: url(../images/about/bcg-about-mobile@2x.png);
   }
 }
