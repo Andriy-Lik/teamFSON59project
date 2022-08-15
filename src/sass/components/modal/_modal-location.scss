@@ -1,11 +1,11 @@
 .modal-location {
-    background-color: #fff5f6;
+    
 
     &__text {
             display: block;
             font-family: 'titan one';
             font-size: 16px;
-            color: #D41443;
+            color: var(--colorText-primary);
             text-align: center;
             margin-bottom: 10px;
         }
@@ -45,15 +45,22 @@
     
     
         &__address-link {
-            color: #907E82;
+            color: var(--colorText-accent);
             text-decoration: none;
-            // transition: color 250ms var(--cubik-timings);
+            transition: color var(--default-transition);
         }
+
+               
     
         &__address-link-span {
-            color: #000000;
+            color: var(--colorText-other);
             margin-right: 10px;
         }
+
+                 &__address-link:hover,
+                 &__address-link:focus {
+                     color: rgb(187, 53, 53);
+                 }
 }
 
 
