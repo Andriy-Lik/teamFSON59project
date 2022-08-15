@@ -10,18 +10,24 @@
 
 .about-section {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 13px;
   background-size: contain;
   background-origin: padding-box;
   background-repeat: no-repeat;
   background-color: var(--bgc-primary);
 
   @media screen and (min-width: 768px) {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 33px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 33px;
+    padding-right: 0;
+    padding-left: 0;
     background-position: 100% 100%;
     background-image: url(../images/about/bcg-about-desktop@1x.png);
   }
