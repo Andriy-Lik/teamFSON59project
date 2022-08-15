@@ -288,15 +288,15 @@ display: block;
     text-align: center;
 }
 
-.hero-thumb__milk--img {
-    width: 152px;
-}
+// .hero-thumb__milk--img {
+//     width: 152px;
+// }
 
-@media screen and (min-width: 1200px) {
-    .hero-thumb__milk--img {
-    width: 213px;
-    }
-}
+// @media screen and (min-width: 1200px) {
+//     .hero-thumb__milk--img {
+//     width: 213px;
+//     }
+// }
 
 
 // похиционируем картинку с молоком
@@ -380,18 +380,18 @@ margin-bottom: 7px;
 }
 
 
-.hero-thumb__btn--arrow {
-    width: 18px;
-    height: 18px;
+// .hero-thumb__btn--arrow {
+//     width: 18px;
+//     height: 18px;
     
-}
+// }
 
-@media screen and (min-width: 1200px) {
-    .hero-thumb__btn--arrow {
-    width: 26px;
-    height: 26px;
-    }
-}
+// @media screen and (min-width: 1200px) {
+//     .hero-thumb__btn--arrow {
+//     width: 26px;
+//     height: 26px;
+//     }
+// }
 // позиционируем картинку с девушкой
 .hero-thumb__girl{
     display: none;
@@ -402,13 +402,12 @@ margin-bottom: 7px;
         right: 32px;
         bottom: 0;
         z-index: 2;
-        width: 190px;
+        
         
     
     }
     @media screen and (min-width: 1200px) {
         right: 32px;
-        width: 304px;
         right: 16px;
         
     }
@@ -423,7 +422,7 @@ margin-bottom: 7px;
     top: 83px;
     left: 36px;
     width: 346px;
-    height: 344px;
+    
     background: var(--colorText-third);
     border-radius: 50%;
 }
