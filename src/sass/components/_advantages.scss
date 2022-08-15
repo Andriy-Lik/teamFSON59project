@@ -1,9 +1,6 @@
 //advantages styles
 .advantages {
 background-color: var(--bgc-primary);
-&__name {
-visibility: hidden;    
-}
 &__list{
 display: block;
 @include media-min ($min-width: 768px) {
