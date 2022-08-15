@@ -18,6 +18,7 @@
 
 
 
+
 .hero-header{
     width: 100%;
     background-color: #FFB8CA;
@@ -158,30 +159,34 @@ transform: scale(1);
     .hero__button {
     font-size: 14px;
     line-height: 1.285;
+    height: 40px;
     }
 }
-
+// крассная кнопка//////////////
 .hero__button--red{
     width: 62.5px;
-    padding: 7px 13px;
     background-color: var(--colorText-primary);
     color: var(--colorText-secondary);
     &:hover, &:focus{
         background-color: #d41444bb;
         transform: scale(1.1);
     }
+    @media screen and (min-width: 1200px) {
+        width: 107px;
+        height: 40px;
+    }
 }
-@media screen and (min-width: 1200px) {
-    .hero__button--red {
-    width: 107px;
-    height: 40px;
-    padding: 11px 23px;
+.hero__link--red{
+    padding: 7px 15px;
+    @media screen and (min-width:768px){
+    padding: 11px 25px;
     }
 }
 
+
+// белая кнопка////////////
 .hero__button--white{
 width: 83px;
-padding: 7px 13px;
 background-color: var(--colorText-secondary);
 color: var(--colorText-primary);
 
@@ -189,15 +194,19 @@ color: var(--colorText-primary);
     background-color: var(--bgc-btnHover);
     transform: scale(1.1);
 }
-}
 
 @media screen and (min-width: 1200px) {
-    .hero__button--white {
     width: 138px;
     height: 40px;
-    padding: 11px 20px;
+}
+}
+.hero__link--white{
+    padding: 7px 13px;
+    @media screen and (min-width:1200px){
+        padding: 11px 20px;
     }
 }
+
 
 @media screen and (max-width: 767px) {
     .hero__list--numbers {
@@ -422,7 +431,7 @@ margin-bottom: 7px;
     top: 83px;
     left: 36px;
     width: 346px;
-    
+    height: 344px;
     background: var(--colorText-third);
     border-radius: 50%;
 }
