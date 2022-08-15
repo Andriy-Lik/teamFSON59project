@@ -1,0 +1,59 @@
+.modal-location {
+    background-color: #fff5f6;
+
+    &__text {
+            display: block;
+            font-family: 'titan one';
+            font-size: 16px;
+            color: #D41443;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    
+    
+        @media screen and (min-width: 768px) {
+            &__text {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+        }
+    
+    
+        &__map {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.47);
+            margin-bottom: 20px;
+    
+        }
+    
+        &__address-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+        }
+    
+    
+        &__address-item {
+            margin-bottom: 10px;
+        }
+    
+        &__address-item:last-child {
+            margin-bottom: 0;
+        }
+    
+    
+        &__address-link {
+            color: #907E82;
+            text-decoration: none;
+            // transition: color 250ms var(--cubik-timings);
+        }
+    
+        &__address-link-span {
+            color: #000000;
+            margin-right: 10px;
+        }
+}
+
+

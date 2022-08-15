@@ -1,0 +1,78 @@
+.modal-about {
+
+    background-color: #FFF5F6;
+
+}
+
+.modal-about__image {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-about__text {
+    display: block;
+    font-family: 'titan one';
+    font-size: 16px;
+    color: #D41443;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .modal-about__text {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
+.modal-about__list {
+    list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-about__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+        margin-bottom: 10px;
+    }
+}
+
+.modal-about__item {
+    
+    border-radius: 4px;
+    background-color: #C2E297;
+    color: white;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.47);
+}
+
+@media screen and (min-width: 768px) {
+.modal-about__item {
+    width: calc((100% - 2 * 20px) / 2);
+    margin: 10px;
+
+}
+}
+
+
+
+.modal-about__item:last-child {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-about__item:last-child {
+            margin-bottom: 10px;
+        }
+}
+
+.modal-about__item-text {
+    padding: 20px;
+}
+
+
+.modal-about__info-text {
+    color: #907E82;
+}
