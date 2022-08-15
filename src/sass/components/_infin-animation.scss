@@ -79,10 +79,10 @@
 
 
 .question-modal-btn-close {
-width: 20px;
+    width: 20px;
     height: 20px;
+    background-color: transparent;
     cursor: pointer;
-    background-color: #0000;
     border: none;
     padding: 0;
     position: absolute;
@@ -90,13 +90,27 @@ width: 20px;
     right: 20px;
 }
 
+.btn-question-open {
+    background-color: transparent;
+    border: none;
+    position:absolute;
+    top: 0;
+    left: 0; 
+}
+
 .question-modal-icon {
     stroke: var(--colorText-secondary);
-        width: 100%;
-        height: 100%;
-        transition: stroke var(--default-transition), transform var(--default-transition);
-        display: block;
-        transform: scale(1);
+    width: 100%;
+    height: 100%;
+    transition: stroke var(--default-transition), transform var(--default-transition);
+    display: block;
+    transform: scale(1);
+
+    .question-modal-btn-close:hover &,
+    .question-modal-btn-close:focus & {
+        stroke: var(--colorText-primary);
+        transform: scale(1.1);
+    }
 }
 
 
@@ -169,6 +183,13 @@ width: 20px;
 
         @include media-min (1200px)  {
             max-width: 250px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: var(--bgc-btnHover);
+            transform: scale(1.1);
+
         }
 }
 // .visually-hidden {

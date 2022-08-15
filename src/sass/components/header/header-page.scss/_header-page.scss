@@ -16,12 +16,14 @@
         }
     }
     &__outer-margin {
-        @include media-max (1200px) {
+        @include media-max (768px) {
             padding: 8px 0 8px 0;
         }
+        @include media-min (768px) {
+            padding: 32px 0 32px 0;
+        }
         @include media-min (1200px) {
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding: 40px 0 40px 0;
         }
     }  
 }

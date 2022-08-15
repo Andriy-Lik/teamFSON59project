@@ -5,48 +5,112 @@
       <span class="title-lable">100% natural</span>
       <h2 class="title">products</h2>
     </div>
-    <div class="products">
-      <ul class="products__list list">
-        <li class="products__item products__item-cream">
-          <h3 class="products__title">ice cream</h3>
-          <p class="products__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <button type="button" class="products__btn products__btn-pinkHover">
-            <img srcset=" ./images/products/arrow-right2.png 1x,
-            ./images/products/arrow-right2@2x.png 2x "
-            src="./images/products/arrow-right2.png" alt="arrow" width: 40px;
-            height: 40px; />
+    <ul class="products__list list">
+      <li class="products__item products__item-cream">
+        <h3 class="products__title">ice cream</h3>
+        <p class="products__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button
+          type="button"
+          class="products__btn products__btn-primary"
+          data-modal-open-primary
+        >
+          <img class="js-open-modal" srcset=" ./images/products/arrow-right2.png
+          1x, ./images/products/arrow-right2@2x.png 2x "
+          src="./images/products/arrow-right2.png" alt="arrow" width: 40px;
+          height: 40px; />
+        </button>
+        <div
+          class="products__modal products__modal-primary is-hidden-primary"
+          data-modal-primary
+        >
+          <button
+            type="button"
+            class="products__text products__cross products__cross-primary"
+            data-modal-close-primary
+          >
+            X
           </button>
-        </li>
-        <li class="products__item products__item-coffee">
-          <h3 class="products__title">ice coffee</h3>
           <p class="products__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            ea doloribus magnam quo inventore libero hic enim itaque,
+            voluptates, praesentium eius fugiat id amet provident mollitia
+            beatae! At, earum vel.
           </p>
-          <button type="button" class="products__btn products__btn-orangeHover">
-            <img srcset=" ./images/products/arrow-right2.png 1x,
-            ./images/products/arrow-right2@2x.png 2x "
-            src="./images/products/arrow-right2.png" alt="arrow" width: 40px;
-            height: 40px; />
+        </div>
+      </li>
+      <li class="products__item products__item-coffee">
+        <h3 class="products__title">ice coffee</h3>
+        <p class="products__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button
+          type="button"
+          class="products__btn products__btn-secondary"
+          data-modal-open-secondary
+        >
+          <img class="js-open-modal" srcset=" ./images/products/arrow-right2.png
+          1x, ./images/products/arrow-right2@2x.png 2x "
+          src="./images/products/arrow-right2.png" alt="arrow" width: 40px;
+          height: 40px; />
+        </button>
+        <div
+          class="products__modal products__modal-secondary is-hidden-secondary"
+          data-modal-secondary
+        >
+          <button
+            type="button"
+            class="products__text products__cross products__cross-secondary"
+            data-modal-close-secondary
+          >
+            X
           </button>
-        </li>
-        <li class="products__item products__item-milkshakes">
-          <h3 class="products__title">milkshakes</h3>
           <p class="products__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            ea doloribus magnam quo inventore libero hic enim itaque,
+            voluptates, praesentium eius fugiat id amet provident mollitia
+            beatae! At, earum vel.
           </p>
-          <button type="button" class="products__btn products__btn-greenHover">
-            <img srcset=" ./images/products/arrow-right2.png 1x,
-            ./images/products/arrow-right2@2x.png 2x "
-            src="./images/products/arrow-right2.png" alt="arrow" width: 40px;
-            height: 40px; />
+        </div>
+      </li>
+      <li class="products__item products__item-milkshakes">
+        <h3 class="products__title">milkshakes</h3>
+        <p class="products__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button
+          type="button"
+          class="products__btn products__btn-third"
+          data-modal-open-third
+        >
+          <img class="js-open-modal" srcset=" ./images/products/arrow-right2.png
+          1x, ./images/products/arrow-right2@2x.png 2x "
+          src="./images/products/arrow-right2.png" alt="arrow" width: 40px;
+          height: 40px; />
+        </button>
+        <div
+          class="products__modal products__modal-third is-hidden-third"
+          data-modal-third
+        >
+          <button
+            type="button"
+            class="products__text products__cross products__cross-third"
+            data-modal-close-third
+          >
+            X
           </button>
-        </li>
-      </ul>
-    </div>
+          <p class="products__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            ea doloribus magnam quo inventore libero hic enim itaque,
+            voluptates, praesentium eius fugiat id amet provident mollitia
+            beatae! At, earum vel.
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
