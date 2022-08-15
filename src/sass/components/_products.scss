@@ -158,6 +158,24 @@
     @media screen and (min-width: 768px) {
       margin: 60px auto 0 auto;
     }
+
+    &-primary:hover,
+    &-primary:focus {
+      scale: 1.1;
+      box-shadow: 10px 10px 10px 2px rgba(248, 140, 165, 0.8);
+    }
+
+    &-secondary:hover,
+    &-secondary:focus {
+      scale: 1.1;
+      box-shadow: 10px 10px 10px 2px rgba(232, 192, 134, 0.8);
+    }
+
+    &-third:hover,
+    &-third:focus {
+      scale: 1.1;
+      box-shadow: 10px 10px 10px 2px rgba(172, 209, 123, 0.8);
+    }
   }
 }
 
@@ -214,7 +232,6 @@
   &:hover,
   &:focus {
     box-shadow: 0 15px 10px var(--hover-primary);
-    transform: rotate(-2deg);
     scale: 1.1;
   }
 }
@@ -271,7 +288,6 @@
   &:hover,
   &:focus {
     box-shadow: 0 15px 10px var(--hover-secondary);
-    transform: rotate(-2deg);
     scale: 1.1;
   }
 }
@@ -328,7 +344,6 @@
   &:hover,
   &:focus {
     box-shadow: 0 15px 10px var(--hover-third);
-    transform: rotate(-2deg);
     scale: 1.1;
   }
 }
@@ -342,30 +357,7 @@
   height: 6px;
 }
 
-.products__btn {
-  transition: scale var(--default-transition),
-    box-shadow var(--default-transition);
-
-  &-primary:hover,
-  &-primary:focus {
-    scale: 1.1;
-    box-shadow: 10px 10px 10px 2px rgba(248, 140, 165, 0.8);
-  }
-
-  &-secondary:hover,
-  &-secondary:focus {
-    scale: 1.1;
-    box-shadow: 10px 10px 10px 2px rgba(232, 192, 134, 0.8);
-  }
-
-  &-third:hover,
-  &-third:focus {
-    scale: 1.1;
-    box-shadow: 10px 10px 10px 2px rgba(172, 209, 123, 0.8);
-  }
-}
-
-.modal {
+.products__modal {
   position: absolute;
   bottom: 0;
   left: 0;
