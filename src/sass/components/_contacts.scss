@@ -10,6 +10,11 @@
         font-size: 14px;
         padding-top: 30px;
     }
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        padding: 60px 0;
+     }
     
     color: var(--colorText-other);
     background-image: 
@@ -18,6 +23,11 @@
     @media screen and (min-width:768px) {
         background-image: 
     linear-gradient(to bottom, var(--colorText-secondary) 45%, var(--bgc-primary) 45%);
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image: 
+    linear-gradient(to bottom, var(--colorText-secondary) 20%, var(--bgc-primary) 20%);
     }
 
     &__button {
@@ -39,6 +49,10 @@
              }
         }
 
+        @media screen and (min-width:1200px) {
+            padding: 0 35px;
+        }
+
         &:hover,
         &:focus {
             background-color: var(--bgc-btnHoverAccent);
@@ -58,12 +72,12 @@
                 transform: scale(1.1);
             }
         }
-        
-       
+               
         &:not(:last-of-type) {
             margin-bottom: 10px;  
          }
     }
+
     @media screen and (min-width:768px) {
         &__button-container {
             display: flex;
@@ -96,8 +110,6 @@
     @media screen and (min-width:1200px) {
         padding: 40px;
     }
-
-    
     
     &:not(:last-of-type) {
 
@@ -107,8 +119,6 @@
     @media screen and (min-width:768px) {
         margin-right: 32px;
     }
-
-    
     }
 
         &__category {
@@ -144,7 +154,6 @@
                     padding: 0 16px;
                 }
            }
-
     }
      
      &__caption {
@@ -155,7 +164,6 @@
         }
         }
    
-
     &__city {
         font-size: inherit;
         font-weight: inherit;
@@ -166,14 +174,25 @@
         @media screen and (min-width:768px) {
             margin-bottom: 12px;
         }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 8px;
+        }
     }
 
     &__description {
+        max-width: 180px;
         line-height: 1.5;
         color: var(--colorText-accent);
 
         @media screen and (min-width:768px) {
             line-height: 1.66;
+        }
+
+        @media screen and (min-width:1200px) {
+            max-width: 250px;
+            line-height: 1.83;
+            letter-spacing: 0.04em;
         }
     }
 
@@ -194,6 +213,12 @@
 
         @media screen and (min-width:768px) {
             margin-bottom: 12px;
+        }
+    }
+
+    &__days {
+        @media screen and (min-width:1200px) {
+            letter-spacing: 0.04em;
         }
     }
 
