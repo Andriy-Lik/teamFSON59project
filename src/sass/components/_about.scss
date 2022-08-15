@@ -9,7 +9,8 @@
 }
 
 .about-section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-size: contain;
   background-origin: padding-box;
   background-repeat: no-repeat;
@@ -55,11 +56,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--colorText-primary);
-  margin-bottom: 15px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.14;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {

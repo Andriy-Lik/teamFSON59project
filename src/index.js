@@ -1,3 +1,9 @@
 import './js/_mobile-menu';
 import './js/_slick';
 import './js/_products-modal';
+import './js/_question'
+import './js/_totop'
+import './js/_scroll'
+import './js/_modal-buy'
+import './js/_modal-about'
+import './js/_modal-location'

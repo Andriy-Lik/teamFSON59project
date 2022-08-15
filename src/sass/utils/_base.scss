@@ -45,3 +45,14 @@
   margin-left: 12px;
   background-image: url(../images/icons/Vector1.svg); 
 }
+
+.button__icon {
+  width: 6px;
+  height: 10px;
+  margin-left: 12px;
+  fill: var(--colorText-secondary);
+
+  &--light {
+    fill: var(--colorText-primary);
+  }
+}

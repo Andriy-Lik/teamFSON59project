@@ -1,10 +1,13 @@
 @import './base/normalize';
 @import './base/reset';
-@import './base/visually-hidden';
+@import './utils/visually-hidden';
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixin';
-@import './base/base';
+@import './utils/base';
+
+@import './components/infin-animation';
+@import './components/totop';
 
 @import './components/header/logo';
 @import './components/header/header-page.scss/header-page';
@@ -16,6 +19,13 @@
 @import './components/header/mobile-menu/mobile-menu';
 @import './components/header/mobile-menu/button-mobile';
 @import './components/header/mobile-menu/navigation-mobile';
+
+@import './components/modal/backdrop';
+@import './components/modal/modal';
+@import './components/modal/modal-buy';
+@import './components/modal/modal-about';
+@import './components/modal/modal-location';
+
 
 @import './components/header-hero';
 @import './components/products';
