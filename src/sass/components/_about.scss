@@ -10,17 +10,14 @@
 
 .about-section {
   padding-top: 60px;
-  padding-bottom: 13px;
+  padding-bottom: 40px;
   background-size: contain;
   background-origin: padding-box;
   background-repeat: no-repeat;
   background-color: var(--bgc-primary);
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 33px;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 60px 0;
   }
 
   @media screen and (min-width: 1200px) {
