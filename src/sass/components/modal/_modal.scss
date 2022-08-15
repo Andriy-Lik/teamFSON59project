@@ -1,8 +1,8 @@
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal-list {
     transform: translate(-50%, -50%) scale(0);
 }
 
-.modal{
+.modal-list{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,6 +21,7 @@
 
         &__close-button {
                 position: absolute;
+                
                 display: flex;
                 justify-content: center;
                 text-align: center;
@@ -46,7 +47,7 @@
 }
 
 @media screen and (min-width: 768px){
-     .modal {
+     .modal-list {
         max-width: 450px;
         min-height: 550px;
 
@@ -54,8 +55,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .modal {
-        max-width: 550px;
+    .modal-list {
+        max-width: 600px;
         min-height: 725px;
 
     }

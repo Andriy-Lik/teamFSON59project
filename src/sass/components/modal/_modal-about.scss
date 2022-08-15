@@ -110,13 +110,13 @@
                                     }
                                 }
 
-        &__modal-about__info-text-link {
+        &__info-text-link {
             color: var(--colorText-secondary);
             transition: color var(--default-transition);
         }
 
-                &__modal-about__info-text-link:hover,
-                &__modal-about__info-text-link:focus {
+                &__info-text-link:hover,
+                &__info-text-link:focus {
                  color: var(--bgc-btnHoverAccent);
 
                 }
