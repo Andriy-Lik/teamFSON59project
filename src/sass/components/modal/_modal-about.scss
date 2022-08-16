@@ -84,11 +84,15 @@
     
         &__item-text {
             padding: 20px;
+            font-family: var(--fontFamaly-secondary);
+            font-size: 18px;
         }
     
     
         &__info-text {
             color: var(--colorText-accent);
+            font-size: 16px;
+            letter-spacing: 0.20;
         }
 
         &__modal-about__info-text {
