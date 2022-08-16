@@ -3,7 +3,9 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    &__container {
-        transform: translatey(-100%);
-    }
+}
+
+.backdrop-mobile.is-hidden .backdrop-mobile__container { 
+    transform: translatey(-100%);
+
 }
