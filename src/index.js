@@ -10,3 +10,4 @@ import './js/_modal-buy-mobile';
 import './js/_products-modal-milkshakes';
 import './js/_products-modal-coffe';
 import './js/_products-modal-cream';
+import './js/_modal-franchisel';
