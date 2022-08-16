@@ -1,10 +1,11 @@
 <!--infin-animation-->
-<form>
-  <div class="backdrop-question is-hidden" modal-question>
+
+<div class="backdrop-question is-hidden" modal-question>
+  <form>
     <div class="question-modal">
-      <h2 class="question-modal__title title" >Leave your questions here</h2>
+      <h2 class="question-modal__title title">Leave your questions here</h2>
       <label class="question-modal__coment">
-      Question:
+        Question:
         <textarea
           name="feedback"
           rows="5"
@@ -12,24 +13,21 @@
           class="question-modal__form"
         ></textarea>
       </label>
-        <button type="submit" class="question-modal__btn button">
-          Send
-        </button>
-        
-        <button class="question-modal-btn-close" modal-question-close>
-          <svg class="question-modal-icon">
-            <use
+      <button type="submit" class="question-modal__btn button">Send</button>
+
+      <button class="question-modal__btn-close" modal-question-close>
+        <svg class="question-modal__icon">
+          <use
             class="mobile-menu__icon"
             href="./images/icons/sprite.svg#icon-close"
-            ></use>
-          </svg>
-        </button>
-      </div>
+          ></use>
+        </svg>
+      </button>
     </div>
-  </form> 
-    <button class="btn-question-open" modal-question-open>
-      <svg class="icon-icecream">
-        <use href="./images/icons/ice-cream.svg#icon-icecream"></use>
-      </svg>
-    </button>
-    
+  </form>
+</div>
+<button class="question-modal__btn-open" modal-question-open>
+  <svg class="icon-icecream">
+    <use href="./images/icons/ice-cream.svg#icon-icecream"></use>
+  </svg>
+</button>
