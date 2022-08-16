@@ -227,9 +227,12 @@
     }
 
     &__link {
+        display: inline-block;
         line-height: 1.5;
         color: var(--colorText-accent);
-        transition: color var(--default-transition);
+        transform: scale(1);
+        transition: color var(--default-transition),
+        transform var(--default-transition);
 
         @media screen and (min-width:768px) {
             line-height: 1.83;
@@ -238,6 +241,7 @@
          &:hover,
          &:focus {
              color: var(--colorText-primary);
+             transform: scale(1.1);
          }
     }
 }
