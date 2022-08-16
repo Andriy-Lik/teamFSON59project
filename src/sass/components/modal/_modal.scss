@@ -50,7 +50,7 @@
                 }
                 &:hover,
                 &:focus {
-                    stroke: var(--colorText-other);
+                    stroke: var(--bgc-btnHoverAccent);
                     transform: scale(1.1);
                     @include media-min (768px) {
                         transform: scale(1.3);
