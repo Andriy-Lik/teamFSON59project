@@ -89,6 +89,9 @@
 }
 
 .footer-contacts {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
 
     @media (min-width: 768px) {
         padding-top: 52px;
@@ -157,27 +160,33 @@
     }
 
     @media (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         font-size: 16px;
         line-height: 1.86;
         letter-spacing: 0.02em;
     }
 }
 
-.footer-tel:hover .footer-tel__text,
-.footer-tel:focus .footer-tel__text {
-    transform: scale(1.1);
-}
+// .footer-tel:hover .footer-tel__text,
+// .footer-tel:focus .footer-tel__text {
+//     transform: scale(1.1);
+// }
 
 .footer-tel__text {
+    // display: inline-block;
     color: var(--colorText-primary);
 
     transform: scale(1);
     transition: transform var(--default-transition);
 
-    //&:hover,
-   // &:focus {
-   //     transform: scale(1.1);
-   // }
+    .footer-tel:hover &,
+    .footer-tel:focus &  {
+    transform: scale(1.1);
+    // color: #E1E1E1;
+
+    }
 }
 
 .footer-subtitle {
