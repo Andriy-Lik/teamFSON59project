@@ -169,13 +169,7 @@
     }
 }
 
-// .footer-tel:hover .footer-tel__text,
-// .footer-tel:focus .footer-tel__text {
-//     transform: scale(1.1);
-// }
-
 .footer-tel__text {
-    // display: inline-block;
     color: var(--colorText-primary);
 
     transform: scale(1);
@@ -183,9 +177,7 @@
 
     .footer-tel:hover &,
     .footer-tel:focus &  {
-    transform: scale(1.1);
-    // color: #E1E1E1;
-
+        transform: scale(1.1);
     }
 }
 
