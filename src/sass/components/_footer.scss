@@ -1,5 +1,4 @@
 //footer styles
-
 .footer {
     background-color: var(--bgc-primary);
 }
@@ -98,7 +97,6 @@
     @media (min-width: 1200px) {
         padding-top: 12px;
     }
-    //display: flex;
 }
 
 .footer-list {
@@ -165,16 +163,21 @@
     }
 }
 
+.footer-tel:hover .footer-tel__text,
+.footer-tel:focus .footer-tel__text {
+    transform: scale(1.1);
+}
+
 .footer-tel__text {
     color: var(--colorText-primary);
 
     transform: scale(1);
     transition: transform var(--default-transition);
 
-    &:hover,
-    &:focus {
-        transform: scale(1.1);
-    }
+    //&:hover,
+   // &:focus {
+   //     transform: scale(1.1);
+   // }
 }
 
 .footer-subtitle {
