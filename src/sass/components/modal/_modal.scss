@@ -3,6 +3,9 @@
 }
 
 .modal-list {
+
+    scrollbar-color: var(--bgc-btnHoverAccent) var(--bgc-primary);
+    scrollbar-width: thin;
     position: absolute;
     top: 50%;
     left: 50%;
