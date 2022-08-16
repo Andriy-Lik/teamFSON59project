@@ -21,9 +21,13 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background-position: left 0 bottom 40px;
-    background-size: 100vw auto;
+    background-position: 100% 100%;
     background-image: url(../images/about/bcg-about-desktop@1x.png);
+  }
+
+  @media screen and (min-width: 1800px) {
+    background-size: cover;
+    background-position: top;
   }
 }
 
