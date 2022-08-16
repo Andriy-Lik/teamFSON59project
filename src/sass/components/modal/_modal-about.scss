@@ -46,6 +46,7 @@
         }
     
         &__item {
+            transform: scale(1);
     
             border-radius: 4px;
             background-color: var(--bgc-accent);
@@ -54,12 +55,14 @@
             box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.47);
             transition: background-color var(--default-transition);
             transition: color var(--default-transition);
+            transition: transform var(--default-transition);
         }
 
                 &__item:hover,
                 &__item:focus {
                      color: var(--bgc-btnHoverAccent);
                      background-color: var(--border-decorative);
+                     transform: scale(1.04);
                  }
     
         @media screen and (min-width: 768px) {
@@ -83,34 +86,41 @@
         }
     
         &__item-text {
+            font-family: 'titan one';
             padding: 20px;
-            font-family: var(--fontFamaly-secondary);
+            // font-family: var(--fontFamaly-secondary);
             font-size: 18px;
         }
-    
-    
-        &__info-text {
-            color: var(--colorText-accent);
-            font-size: 16px;
-            letter-spacing: 0.20;
-        }
 
-        &__modal-about__info-text {
-            font-size: 14px;
-            line-height: 1.14;
+                @media screen and (min-width: 1200px) {
+                    &__item-text {
+                        font-size: 18px;
+                    }
+                }
+    
+    
+        
+
+        &__info-text {
+                color: #343030;
+                letter-spacing: 0.20;
+                font-family: 'dm sans';
+                font-size: 15px;
+                line-height: 1.13;
+            
         }
 
                 @media screen and (min-width: 768px) {
-                    &__modal-about__info-text {
+                    &__info-text {
                         font-size: 18px;
-                        line-height: 1.11px;
+                            line-height: 1.22;
                     }
                 }
 
                                 @media screen and (min-width: 1200px) {
                                     &__modal-about__info-text {
-                                        font-size: 20px;
-                                        line-height: 1.2;
+                                        font-size: 22px;
+                                        line-height: 1.18px;
                                     }
                                 }
 
