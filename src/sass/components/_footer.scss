@@ -90,7 +90,7 @@
 
 .footer-contacts {
     display: flex;
-    width: 300px;
+    max-width: 360px;
     flex-direction: column;
 
     @media (min-width: 768px) {
@@ -142,16 +142,16 @@
 }
 
 .footer-tel {
+    display: flex;
     color: var(--colorText-other);
-
     font-family: var(--fontFamaly-secondary);
     font-weight: 700;
     font-size: 12px;
     line-height: 1.83;
     text-align: right;
 
-    @media (max-width: 767px) {
-        display: block;
+   @media (max-width: 767px) {
+        justify-content: flex-end;
     }
 
     @media (min-width: 768px) {
@@ -160,9 +160,7 @@
     }
 
     @media (min-width: 1200px) {
-        display: flex;
         align-items: center;
-        justify-content: space-between;
         font-size: 16px;
         line-height: 1.86;
         letter-spacing: 0.02em;
@@ -171,6 +169,11 @@
 
 .footer-tel__text {
     color: var(--colorText-primary);
+    padding-left: 7px;
+    
+    @media (min-width: 768px) {
+        padding-left: 10px;
+    }
 
     transform: scale(1);
     transition: transform var(--default-transition);
